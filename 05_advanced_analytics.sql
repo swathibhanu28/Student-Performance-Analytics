@@ -1,5 +1,5 @@
 
--- Q6. Find top scorer in each course
+--  top scorer in each course
 SELECT 
     c.course_name,
     s.name,
@@ -13,7 +13,7 @@ WHERE e.marks = (
     WHERE e2.course_id = e.course_id
 );
 
--- Q7. Find students performing below department average CGPA
+--  students performing below department average CGPA
 SELECT 
     s.student_id,
     s.name,
@@ -25,3 +25,4 @@ WHERE s.cgpa < (
     FROM students s2
     WHERE s2.department = s.department
 );
+
