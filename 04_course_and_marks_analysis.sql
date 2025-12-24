@@ -2,7 +2,7 @@
 -- COURSE DIFFICULTY & MARKS ANALYSIS
 -- ============================================
 
--- Q4. Find average marks for each course
+--  average marks for each course
 SELECT 
     c.course_name,
     ROUND(AVG(e.marks), 2) AS avg_marks
@@ -10,7 +10,7 @@ FROM courses c
 JOIN enrollments e ON c.course_id = e.course_id
 GROUP BY c.course_name;
 
--- Q5. Find students who scored below course average
+--  students who scored below course average
 SELECT 
     s.name,
     c.course_name,
@@ -23,3 +23,4 @@ WHERE e.marks < (
     FROM enrollments e2
     WHERE e2.course_id = e.course_id
 );
+
