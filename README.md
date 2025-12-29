@@ -16,19 +16,19 @@ The goal is to derive meaningful insights such as department-wise performance, s
 
 The SQL logic is organized progressively to demonstrate learning and query complexity:
 
-- **01_schema.sql**  
+- **schema.sql**  
   Database and table creation (students, courses, enrollments)
 
-- **02_basic_queries.sql**  
+- **basic_queries.sql**  
   Basic SELECT and WHERE queries
 
-- **03_aggregation_queries.sql**  
+- **aggregation_queries.sql**  
   GROUP BY, COUNT, and AVG queries for analysis
 
-- **04_join_queries.sql**  
+- **join_queries.sql**  
   Multi-table JOIN queries for relational analysis
 
-- **05_subqueries.sql**  
+- **subqueries.sql**  
   Advanced subquery-based analysis such as:
   - Students above average CGPA
   - Top CGPA student per department
