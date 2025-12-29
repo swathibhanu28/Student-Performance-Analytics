@@ -1,5 +1,4 @@
 --  Show all students with their courses and marks
-
 SELECT 
     s.student_id,
     s.name,
